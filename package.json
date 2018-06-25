@@ -4,7 +4,9 @@
   "repository": "segmentio/nsq.js",
   "description": "NSQ client actually written in javascript",
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "nsq",
@@ -18,7 +20,8 @@
     "ms": "~0.6.2",
     "node-int64": "~0.3.0",
     "nsq-lookup": "~2.0.1",
-    "set-component": "~1.0.0"
+    "set-component": "~1.0.0",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "bytes": "~0.3.0",
@@ -28,5 +31,6 @@
     "superagent": "~0.17.0",
     "uid": "0.0.2"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
